@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arvo&family=Bebas+Neue&family=Bitter:wght@600&family=Carattere&family=Chonburi&family=Fahkwang&family=Graduate&family=Josefin+Slab:ital,wght@0,100;1,100&family=Lobster&family=Mitr:wght@300&family=Nosifer&family=Oswald:wght@300&family=Playpen+Sans:wght@300&family=Russo+One&family=Satisfy&family=Ubuntu&family=Whisper&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="#"><img src="logo3.png" alt="Logo" class="logo"></a>
+            <p class="navbar-name"><span class="text-blue">Travel</span><span class="text-red">Bloom</span></p>
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="#" onclick="loadHome()">Home</a></li>
+            <li><a href="#" onclick="loadAbout()">About</a></li>
+            <li><a href="#" onclick="loadContact()">Contact Us</a></li>
+        </ul>
+        <div class="navbar-search">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button onclick="search()">Search</button>
+            <button onclick="clearSearch()">Clear</button>
+        </div>
+    </nav>
+
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+    </div>
+    <div class="container">
+        <div class="container-head">
+            <p>EXPLORE</p>
+            <p>DREAM</p>
+            <p>DESTINATION</p>
+        </div>
+        <div class="container-last">
+            <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while
+                pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
+        </div>
+        <div class="container-btn">
+            <button>Book now</button>
+        </div>
+    </div>
+    <div class="content"></div>
+    <div id="search-content"></div>
+    <script src="travel_recommendation.js"></script>
+</body>
+
+</html>
